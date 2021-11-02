@@ -40,6 +40,10 @@ Once the application is running, you'll encounter a series of prompts.
 
 example of how application works:</b>
 
+
+https://user-images.githubusercontent.com/74510050/139960883-6d9a24af-4d52-4dc1-b410-b7259e121e76.mp4
+
+
  
 
 ## Questions
