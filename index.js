@@ -71,3 +71,41 @@ const start = () => {
             }
         });
 };
+
+const viewAllDepartments = () => {
+
+    const query = "SELECT * FROM department;";
+    db_connection.query(query,
+
+        function (err, res) {
+            if (err) throw err
+            console.table(res);
+            start();
+        });
+};
+
+const viewAllRoles = () => {
+
+    const query = `SELECT id, title, salary FROM role;`;
+    db_connection.query(query,
+
+        function (err, res) {
+            if (err) throw err
+            console.table(res);
+            start();
+        });
+
+};
+
+const viewAllEmployees = () => {
+
+    const query = "SELECT employee.id, employee.first_name, employee.last_name, department.name, role.title, role.salary, CONCAT(e.first_name, ' ' ,e.last_name) AS Manager FROM employee INNER JOIN role on role.id = employee.role_id INNER JOIN department on department.id = role.department_id left join employee e on employee.manager_id = e.id;";
+    db_connection.query(query,
+
+        function (err, res) {
+            if (err) throw err
+            console.table(res);
+            start();
+        });
+
+};
