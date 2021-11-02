@@ -20,12 +20,12 @@ VALUES (1, "CEO", 15000000),
 
 -- Employee seeds
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Chase", "Nicks", 1, null),
-       ("John", "Doe", 2, 1),
-       ("Mike", "Chan", 3, NULL),
-       ("Ashley", "Rodriguez", 4, 1),
-       ("Kevin", "Tupik", 5, 4), 
-       ("Anthony", "Singh", 6, 1),
-       ("Malia", "Brown", 7, 5),
-       ("Sarah", "Lourd", 8, 1),
-       ("Tom", "Allen", 9, 6);
+VALUES ("Bruce", "Banner", 1, null),
+       ("Steve", "Rodgers", 2, 1),
+       ("Peter", "Parker", 3, NULL),
+       ("Nick", "Fury", 4, 1),
+       ("Stephen", "Strange", 5, 4), 
+       ("Scott", "Lang", 6, 1),
+       ("Peter", "Quill", 7, 5),
+       ("Tony", "Stark", 8, 1),
+       ("Rocket", "Raccon", 9, 6);
