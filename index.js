@@ -37,3 +37,37 @@ const start = () => {
                 ],
             },
         ])
+
+        .then(function(val) {
+            switch (val.choice) {
+
+                case "View all departments":
+                    viewAllDepartments();
+                    break;
+
+                case "View all roles":
+                    viewAllRoles();
+                    break;
+
+                case "View all employees":
+                    viewAllEmployees();
+                    break;
+
+                case "Add a department":
+                    addAdepartment();
+                    break;
+
+                case "Add a role":
+                    addArole();
+                    break;
+
+                case "Add a employee":
+                    addAemployee();
+                    break;
+
+                case "Update an employee role":
+                    updateEmployeeRole();
+                    break;
+            }
+        });
+};
