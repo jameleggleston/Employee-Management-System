@@ -19,3 +19,21 @@ db_connection.connect(function (err) {
     start();
 })
 
+const start = () => {
+    inquirer
+        .prompt([
+            {
+                type: "list",
+                message: "What would you like to do?",
+                name: "choice",
+                choices: [
+                    "View all departments",
+                    "View all roles",
+                    "View all employees",
+                    "Add a department",
+                    "Add a role",
+                    "Add a employee",
+                    "Update an employee role"
+                ],
+            },
+        ])
