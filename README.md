@@ -1,5 +1,6 @@
 # Employee Management System 
-
+As a business owner sometimes you want to be able to view and manage the departments, roles, and employees in your company
+so that you can organize and plan your business. This application allows you to do just that!
 
 
 ## Table of Contents
